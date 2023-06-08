@@ -1,0 +1,60 @@
+<section id="toDoList">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h1>To-do list</h1>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="row margin-top-5 margin-bottom-5">
+      <div class="col-4">
+        <label for="filter">Description</label>
+        <input id="filter" type="text" [(ngModel)]="filterDescription" placeholder="Filter by description">
+      </div>
+      <div class="col-4">
+        <label for="priority">Priority</label>
+        <select id="priority" [(ngModel)]="filterPriority">
+          <option value="">All</option>
+          <option value="High">High</option>
+          <option value="Medium">Medium</option>
+          <option value="Low">Low</option>
+        </select>
+      </div>
+      <div class="col-4">
+        <label for="priority">Status</label>
+        <select [(ngModel)]="filterStatus">
+          <option [ngValue]="null">All</option>
+          <option [ngValue]="true">Completed</option>
+          <option [ngValue]="false">Pending</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Lista de Tarefas -->
+    <div class="row margin-top-5 margin-bottom-5">
+      <div class="col-12">
+        <div class="table-holder">
+          <table>
+            <thead>
+              <tr>
+                <th>Status</th>
+                <th>Priority</th>
+                <th>Due Date</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let item of filteredTodoItems">
+                <td><input type="checkbox" [(ngModel)]="item.completed"></td>
+                <td>{{ item.priority }}</td>
+                <td>{{ item.dueDate }}</td>
+                <td>{{ item.description }}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

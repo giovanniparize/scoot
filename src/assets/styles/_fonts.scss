@@ -1,0 +1,23 @@
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  color: #232323;
+  margin: 24px 0;
+}
+
+p, li, a, span, td, label {
+  font-weight: 400;
+  font-size: 16px;
+  color: #343434;
+  margin: 12px 0;
+}
+
+
+h1 {
+  font-size: 36px;
+}
+
+label {
+  display: inline-flex;
+  font-weight: 700;
+  margin: 0 0 4px;
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "description": "Complete project proposal",
+    "dueDate": "2023-06-10",
+    "priority": "High",
+    "completed": true
+  },
+  {
+    "description": "Review client feedback",
+    "dueDate": "2023-06-12",
+    "priority": "Medium",
+    "completed": false
+  },
+  {
+    "description": "Prepare presentation slides",
+    "dueDate": "2023-06-15",
+    "priority": "High",
+    "completed": false
+  },
+  {
+    "description": "Send project report to team",
+    "dueDate": "2023-06-20",
+    "priority": "Medium",
+    "completed": true
+  },
+  {
+    "description": "Follow up with stakeholders",
+    "dueDate": "2023-06-25",
+    "priority": "Low",
+    "completed": false
+  }
+]

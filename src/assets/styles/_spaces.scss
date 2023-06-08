@@ -1,0 +1,48 @@
+@each $cont, $space in (10: 40px, 9: 36px, 8: 32px, 7: 28px, 6: 24px, 5: 20px, 4: 16px, 3: 12px, 2: 8px, 1: 4px) {
+  .margin-top-#{$cont} {
+    margin-top: $space;
+  }
+
+  .margin-right-#{$cont} {
+    margin-right: $space;
+  }
+
+  .margin-bottom-#{$cont} {
+    margin-bottom: $space;
+  }
+
+  .margin-left-#{$cont} {
+    margin-left: $space;
+  }
+
+  .padding-top-#{$cont} {
+    padding-top: $space;
+  }
+
+  .padding-right-#{$cont} {
+    padding-right: $space;
+  }
+
+  .padding-bottom-#{$cont} {
+    padding-bottom: $space;
+  }
+
+  .padding-left-#{$cont} {
+    padding-left: $space;
+  }
+
+  .padding-bases-#{$cont} {
+    padding-top: $space;
+    padding-bottom: $space;
+  }
+
+  .padding-sides-#{$cont} {
+    padding-left: $space;
+    padding-right: $space;
+  }
+}
+
+.margin-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
